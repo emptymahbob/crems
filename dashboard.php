@@ -123,7 +123,7 @@ if ($result) {
                                                     echo '<td class="">' . $row['sgpa'] . '</td>';
                                                     echo '<td class="">' . $row['attendance'] . '</td>';
                                                     echo '<td><a href="accept-candidate.php?CandidateID=' . $row['CandidateID'] . '&SectionBatch=' . $SectionBatch . '" class="btn btn-outline-success btn-sm mr-2">Accept</a>
-                                                    <a href="deleteCandidate.php?SectionBatch=' . $row['SectionBatch'] . '&CandidateID=' . $row['CandidateID'] . '" class="btn btn-outline-danger btn-sm">Cancel</a></td>';
+                                                    <a href="deleteCandidate.php?SectionBatch=' . $row['SectionBatch'] . '&CandidateID=' . $row['CandidateID'] . '" class="btn btn-outline-danger btn-sm">Delete</a></td>';
                                                     echo '</tr>';
                                                     $serialNo++;
                                                 }
