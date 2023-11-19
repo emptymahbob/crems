@@ -10,7 +10,7 @@ if (isset($_SESSION['employeeID'])) {
 include('header.php');
 ?>
 <br><br>
-<h2 class="text-center mt-5 mb-5">Login to view your Election dashboard</h2>
+<h2 class="text-center mt-5 mb-5">Login to view Election dashboard</h2>
 
 <div class="container-fluid mt-2" style="width: 40%;">
     <div class="row">
