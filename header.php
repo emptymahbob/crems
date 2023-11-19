@@ -29,13 +29,24 @@
                         </a>
                     </li>
 
-                <?php
+                    <?php
                 } else {
-                ?>
-                    <li class="nav-item">
-                        <a class="nav-link text-white btn btn-outline-info" href="login.php">Login</a>
-                    </li>
+
+                    if (!isset($_SESSION['employeeID'])) {
+                    ?>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn btn-outline-info" href="dashboard.php">Dashboard</a>
+                        </li>
+
+                    <?php
+                    } else {
+                    ?>
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn btn-outline-info" href="login.php">Login</a>
+                        </li>
                 <?php
+                    }
                 }
                 ?>
                 <li class="nav-item">
