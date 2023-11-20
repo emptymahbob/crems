@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Validate the voter details
-    $validateVoterQuery = "SELECT * FROM voters WHERE VID = '$vid' AND Name = '$name' AND SectionBatch = '$sectionBatch'";
+    $validateVoterQuery = "SELECT * FROM voters WHERE VID = '$vid' AND `Name` = '$name' AND `SectionBatch` = '$sectionBatch'";
     $validateVoterResult = mysqli_query($conn, $validateVoterQuery);
 
     if (mysqli_num_rows($validateVoterResult) === 0) {
