@@ -30,7 +30,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-sm bg-success navbar-success">
+  <nav class="navbar fixed-top navbar-expand-sm bg-success navbar-success">
     <div class="container">
       <a class="navbar-brand" href="index.php">
         <b>
@@ -66,8 +66,8 @@
       </div>
     </div>
   </nav>
-
-  <div class="container mt-3">
+<br><br>
+  <div class="container mt-5">
     <h2 class="text-center">Welcome to the DIU CRMS (Class Representative Election Management System)</h2>
 
     <div class="row mt-3">
