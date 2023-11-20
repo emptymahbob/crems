@@ -6,12 +6,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
     .footer {
       position: fixed;
       bottom: 0;
       width: 100%;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+*{
+      font-family: 'Roboto', sans-serif;
+      /* You can also specify different weights or styles for different elements */
+      font-weight: 400;
+      /* Bold */
     }
   </style>
 </head>
@@ -25,8 +37,7 @@
           <h3><span class="text-warning">DIU </span><span class="text-info"> CREMS</span></h3>
         </b>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -35,15 +46,15 @@
           // Check if the user is not logged in, redirect to the login page
           if (!isset($_SESSION['employeeID'])) {
           ?>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-info text-white" href="login.php">Login</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-info text-white" href="login.php">Login</a>
+            </li>
           <?php
           } else {
           ?>
-          <li class="nav-item">
-            <a class="nav-link btn btn-outline-info text-white" href="dashboard.php">Dashboard</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-info text-white" href="dashboard.php">Dashboard</a>
+            </li>
           <?php } ?>
           <li class="nav-item">
             <a class="nav-link btn btn-outline-info text-white" href="start_election.php">Start New Election</a>
@@ -67,7 +78,7 @@
           </div>
           <div class="card-body">
             <p class="card-text text-break">
-            In educational institutions, the role of a Class Representative (CR) is crucial in maintaining communication between students and faculty, addressing concerns, and ensuring a smooth academic experience. We always use the traditional process of electing CRs. However, I believe that, as software engineers, we should consider employing a software-based system for this purpose. Implementing a digital voting system could introduce an element of excitement and efficiency that would appeal to everyone involved. <br><br>
+              In educational institutions, the role of a Class Representative (CR) is crucial in maintaining communication between students and faculty, addressing concerns, and ensuring a smooth academic experience. We always use the traditional process of electing CRs. However, I believe that, as software engineers, we should consider employing a software-based system for this purpose. Implementing a digital voting system could introduce an element of excitement and efficiency that would appeal to everyone involved. <br><br>
             </p>
           </div>
         </div>
@@ -79,7 +90,7 @@
           </div>
           <div class="card-body">
             <p class="card-text text-break">
-            The motivation behind this project stems from the need for a more efficient and transparent way to elect Class Representatives. Traditional elections often suffer from low voter turnout, lack of anonymity, and difficulty in counting and verifying votes. By creating an online CR Voting System, we aim to: <b>Enhance Democracy:</b> Enable all students to participate in the election process easily, promoting inclusivity and diversity. <b>Improve Efficiency:</b> Reduce the administrative burden of organizing and conducting elections. <b>Ensure Transparency:</b> Provide a secure and transparent platform for conducting elections, minimizing the chances of fraud or manipulation.
+              The motivation behind this project stems from the need for a more efficient and transparent way to elect Class Representatives. Traditional elections often suffer from low voter turnout, lack of anonymity, and difficulty in counting and verifying votes. By creating an online CR Voting System, we aim to: <b>Enhance Democracy:</b> Enable all students to participate in the election process easily, promoting inclusivity and diversity. <b>Improve Efficiency:</b> Reduce the administrative burden of organizing and conducting elections. <b>Ensure Transparency:</b> Provide a secure and transparent platform for conducting elections, minimizing the chances of fraud or manipulation.
             </p>
           </div>
         </div>
@@ -96,7 +107,7 @@
           </div>
           <div class="card-body">
             <p class="card-text">
-            <b>1.</b> Admin Password Setup: The admin should be able to set a password during the
+              <b>1.</b> Admin Password Setup: The admin should be able to set a password during the
               initial system setup to start the voting process. Only the admin should have the
               authority to start and cancel the voting process using this password. <br>
               <b>2.</b> Admin Access Control: The admin should have exclusive access to features such
