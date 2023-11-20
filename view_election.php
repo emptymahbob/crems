@@ -68,14 +68,15 @@ include('header.php');
             if ($Result) {
                 if (mysqli_num_rows($Result) > 0) {
             ?>
-                    <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Voting is currently Paused.">
-                        <button class="btn btn-outline-success" type="button" disabled>Vote</button>
-                    </span>
+
+                    <input class="btn btn-outline-success" data-bs-toggle="modal" value="Vote" data-bs-target="#staticBackdrop">
+
                 <?php
                 } else {
                 ?>
-                    <input class="btn btn-outline-success" data-bs-toggle="modal" value="Vote" data-bs-target="#staticBackdrop">
-
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Voting is currently Paused.">
+                        <button class="btn btn-outline-success" type="button" disabled>Vote</button>
+                    </span>
             <?php
                     echo '<div class="alert alert-warning mt-4" role="alert">';
                     echo 'Voting is currently Paused.';
