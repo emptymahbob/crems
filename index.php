@@ -114,7 +114,7 @@
               to the election. The admin should also be able to remove candidates if necessary. <br>
               <b>7.</b> Vote Tallying and Result Display: The system should automatically tally the votes
               and display the results. The results should include the candidate with the highest
-              number of votes, declared as the winner. <br>
+              number of votes, declared as the winner. <br><br><br><br>
             </p>
           </div>
         </div>
